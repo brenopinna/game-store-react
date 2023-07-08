@@ -14,11 +14,13 @@ body {
   min-height: 100vh;
   color: #67e480;
   padding: 2rem 4rem;
+  display: grid;
+  place-content: start;
+  gap: 3rem;
 }
 
 .title {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  margin-bottom: 2rem;
 }
 
 form {
@@ -59,7 +61,6 @@ button:hover {
 }
 
 .games {
-  margin-top: 3rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
@@ -73,4 +74,10 @@ button:hover {
 
 .games div img {
   max-width: 100%;
+}
+
+.no-games {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
 }
